@@ -1,0 +1,10 @@
+# ST X-NUCLEO-PLC01A1 Shield GPIO configuration options
+
+# SPDX-License-Identifier: Apache-2.0
+
+config GPIO_X_NUCLEO_PLC01A1
+	bool "ST X-NUCLEO-PLC01A1 Shield driver"
+	default y
+	depends on SPI && GPIO
+	help
+	  Enable driver support for the X-NUCLEO-PLC01A1.

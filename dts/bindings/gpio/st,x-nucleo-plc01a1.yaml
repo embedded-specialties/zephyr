@@ -1,0 +1,14 @@
+description: ST X-NUCLEO-PLC01A1 Industrial PLC Expansion Board
+compatible: "st,x-nucleo-plc01a1"
+include: [gpio-controller.yaml, spi-device.yaml]
+
+properties:
+  gpio-controller:
+    required: true
+  "#gpio-cells":
+    const: 2
+
+# This tells Zephyr that cell 0 is the pin number and cell 1 is configuration flags (like ACTIVE_HIGH/LOW)
+gpio-cells:
+  - pin
+  - flags
